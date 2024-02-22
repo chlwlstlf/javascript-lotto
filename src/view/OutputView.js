@@ -24,6 +24,10 @@ const OutputView = {
   printExitMessage() {
     handleIO.print(GAME_MESSAGE.EXIT);
   },
+
+  printExitMessage() {
+    handleIO.print(GAME_MESSAGE.EXIT);
+  },
 };
 
 export default OutputView;
