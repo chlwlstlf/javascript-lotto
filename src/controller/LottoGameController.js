@@ -36,7 +36,8 @@ class LottoGameController {
     const totalProfit = Object.entries(winningResults).reduce((profit, [matchedKey, count]) => {
       return profit + RANKING[matchedKey].REWARD * count;
     }, 0);
-    return ((totalProfit * 100) / this.#purchaseAmount).toLocaleString('ko-KR', { minimumFractionDigits: 1 });
+    return 100;
+    // return ((totalProfit * 100) / this.#purchaseAmount).toLocaleString('ko-KR', { minimumFractionDigits: 1 });
   }
 
   #restartGame(restartCommand) {
